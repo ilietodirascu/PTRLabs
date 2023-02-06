@@ -27,4 +27,21 @@ defmodule PtrlabsTest do
       [16, 12, 20]
     ]
   end
+  test "factorize returns prime factors of a number" do
+    assert Ptrlabs.factorize(1) == []
+    assert Ptrlabs.factorize(2) == [2]
+    assert Ptrlabs.factorize(3) == [3]
+    assert Ptrlabs.factorize(4) == [2, 2]
+    assert Ptrlabs.factorize(12) == [2, 2, 3]
+    assert Ptrlabs.factorize(13) == [13]
+    assert Ptrlabs.factorize(29) == [29]
+    assert Ptrlabs.factorize(42) == [2,3,7]
+    assert Ptrlabs.factorize(56) == [2, 2, 2, 7]
+    assert Ptrlabs.factorize(100) == [2, 2, 5, 5]
+    assert Ptrlabs.factorize(1000000) == [2, 2, 2, 2, 2, 2, 5, 5, 5, 5, 5, 5]
+  end
+
+  test "factorize returns an empty list for 1" do
+    assert Ptrlabs.factorize(1) == []
+  end
 end

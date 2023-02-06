@@ -4,6 +4,8 @@ defmodule Ptrlabs do
     "mama" => "mother",
     "papa" => "father"
   }
+  @dict %{"2" => ["a","b","c"], "3" => ["d","e","f"], "4" => ["g","h","i"], "5" => ["j","k","l"], "6" => ["m","n","o"], "7" => ["p","q","r"], "8" => ["s","t","u"],"9" => "vwx"}
+
    @moduledoc """
     Provides methods for passing the PTR course.
   """
@@ -234,18 +236,18 @@ end
       ?Z -> [?A | [?Z | []]]
     end
  end
+ def letterCombination(""), do: [""]
 
- def letterCombinations(text) do
-  dict = %{"2" => ["a","b","c"], "3" => ["d","e","f"], "4" => ["g","h","i"], "5" => ["j","k","l"], "6" => ["m","n","o"], "7" => ["p","q","r"], "8" => ["s","t","u"],"9" => "vwx"}
-  numbers = String.codepoints(text)
-  test1 = dict["2"]
-  test2 = dict["3"]
-  test3 = dict["4"]
-  for tst1 <- test1, tst2 <- test2,tst3 <- test3 do
-    "#{tst1}#{tst2}#{tst3}"
-  end
-
+ @doc """
+  Given a string of digits from 2 to 9 returns all possible letter combinations that the number could represent
+## Examples
+    iex>Ptrlabs.letterCombination("23")
+    ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+"""
+ def letterCombination(<<key::binary-1, rest::binary>>) do
+   for letter <- @dict[key], tail <- letterCombination(rest), do: letter <> tail
  end
+
  def comb(list,k,fList) do
   case length(fList) < arrangements(length(list),k) do
     true ->
@@ -268,7 +270,15 @@ end
       iex>Ptrlabs.factorize(42)
       [2,3,7]
 """
+ def factorize(number) when number <= 1 ,do: []
  def factorize(number) do
-  Enum.filter(factors(number),fn x -> prime?(x) == true end)
+  factorize(Enum.filter(factors(number),fn x -> prime?(x) == true end),number)
+ end
+ def factorize([head | tail],number) do
+  factorsProduct = Enum.product([head | tail])
+  cond do
+    factorsProduct != number -> factorize([head | tail] ++ [Enum.max(factorize(Integer.floor_div(number,factorsProduct)))],number)
+    true -> Enum.sort([head | tail])
+  end
  end
 end
