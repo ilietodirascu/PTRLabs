@@ -281,4 +281,26 @@ end
     true -> Enum.sort([head | tail])
   end
  end
+ def commonPrefix([]), do: []
+@doc """
+ Returns the longest common prefix from a given list of strings
+## Examples
+      iex>Ptrlabs.commonPrefix(["alpha" , "beta" , "gamma"])
+      ""
+      iex>Ptrlabs.commonPrefix (["flower" ,"flow" ,"flight"])
+      "fl"
+"""
+ def commonPrefix(words) do
+  for word <- words do
+    String.codepoints(word)
+  end
+  |> magic(1)
+
+ end
+ def magic(words,count) when count <= length(words) do
+  cond do
+   Enum.all?(words, fn x -> Enum.slice(List.first(words),0,count) == Enum.slice(x,0,count) end) === true -> magic(words,count+1)
+   true -> Enum.join(Enum.slice(List.first(words),0,count-1))
+  end
+ end
 end
