@@ -13,7 +13,7 @@
 
     <script src="dist/handlebars.runtime-NWIB6V2M.js"></script>
     <script src="dist/handlebars.templates-IV5W3OL2.js"></script>
-    <script src="dist/sidebar_items-3C72B612.js"></script>
+    <script src="dist/sidebar_items-60C2A77A.js"></script>
 
       <script src="docs_config.js"></script>
 
@@ -365,6 +365,24 @@ ptrlabs
 
     <div class="summary-row">
       <div class="summary-signature">
+        <a href="#to_roman/1" translate="no">to_roman(n)</a>
+
+      </div>
+
+        <div class="summary-synopsis"><p>  Given an integer between 1 and 3999 returns the roman numeral equivalent</p></div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
+        <a href="#to_roman/2" translate="no">to_roman(n, acc)</a>
+
+      </div>
+
+    </div>
+
+    <div class="summary-row">
+      <div class="summary-signature">
         <a href="#translator/2" translate="no">translator(dictionary, original_string)</a>
 
       </div>
@@ -452,9 +470,9 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">commonPrefix</span><span class="p" data-group-id="4537538869-1">(</span><span class="p" data-group-id="4537538869-2">[</span><span class="s">&quot;alpha&quot;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s">&quot;beta&quot;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s">&quot;gamma&quot;</span><span class="p" data-group-id="4537538869-2">]</span><span class="p" data-group-id="4537538869-1">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">commonPrefix</span><span class="p" data-group-id="7144891157-1">(</span><span class="p" data-group-id="7144891157-2">[</span><span class="s">&quot;alpha&quot;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s">&quot;beta&quot;</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="s">&quot;gamma&quot;</span><span class="p" data-group-id="7144891157-2">]</span><span class="p" data-group-id="7144891157-1">)</span><span class="w">
   </span><span class="s">&quot;&quot;</span><span class="w">
-  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">commonPrefix</span><span class="w"> </span><span class="p" data-group-id="4537538869-3">(</span><span class="p" data-group-id="4537538869-4">[</span><span class="s">&quot;flower&quot;</span><span class="w"> </span><span class="p">,</span><span class="s">&quot;flow&quot;</span><span class="w"> </span><span class="p">,</span><span class="s">&quot;flight&quot;</span><span class="p" data-group-id="4537538869-4">]</span><span class="p" data-group-id="4537538869-3">)</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">commonPrefix</span><span class="w"> </span><span class="p" data-group-id="7144891157-3">(</span><span class="p" data-group-id="7144891157-4">[</span><span class="s">&quot;flower&quot;</span><span class="w"> </span><span class="p">,</span><span class="s">&quot;flow&quot;</span><span class="w"> </span><span class="p">,</span><span class="s">&quot;flight&quot;</span><span class="p" data-group-id="7144891157-4">]</span><span class="p" data-group-id="7144891157-3">)</span><span class="w">
   </span><span class="s">&quot;fl&quot;</span></code></pre>
   </section>
 </section>
@@ -478,7 +496,7 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">cylinderArea</span><span class="p" data-group-id="5223465738-1">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="5223465738-1">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">cylinderArea</span><span class="p" data-group-id="6078252271-1">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="6078252271-1">)</span><span class="w">
   </span><span class="mf">175.92904</span></code></pre>
   </section>
 </section>
@@ -502,9 +520,9 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">decode</span><span class="p" data-group-id="9943871137-1">(</span><span class="s">&quot;oRuHp&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="9943871137-1">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">decode</span><span class="p" data-group-id="2278212892-1">(</span><span class="s">&quot;oRuHp&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="2278212892-1">)</span><span class="w">
   </span><span class="s">&quot;lOrEm&quot;</span><span class="w">
-  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">decode</span><span class="p" data-group-id="9943871137-2">(</span><span class="s">&quot;oruhp&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="9943871137-2">)</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">decode</span><span class="p" data-group-id="2278212892-2">(</span><span class="s">&quot;oruhp&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="2278212892-2">)</span><span class="w">
   </span><span class="s">&quot;lorem&quot;</span></code></pre>
   </section>
 </section>
@@ -528,9 +546,9 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">encode</span><span class="p" data-group-id="6071412410-1">(</span><span class="s">&quot;lorem&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="6071412410-1">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">encode</span><span class="p" data-group-id="5300980808-1">(</span><span class="s">&quot;lorem&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="5300980808-1">)</span><span class="w">
   </span><span class="s">&quot;oruhp&quot;</span><span class="w">
-  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">encode</span><span class="p" data-group-id="6071412410-2">(</span><span class="s">&quot;lOrEm&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="6071412410-2">)</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">encode</span><span class="p" data-group-id="5300980808-2">(</span><span class="s">&quot;lOrEm&quot;</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="5300980808-2">)</span><span class="w">
   </span><span class="s">&quot;oRuHp&quot;</span></code></pre>
   </section>
 </section>
@@ -554,8 +572,8 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="n">test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">extractRandomN</span><span class="p" data-group-id="5636637844-1">(</span><span class="p" data-group-id="5636637844-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="5636637844-2">]</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="5636637844-1">)</span><span class="w">
-  </span><span class="gp unselectable">iex&gt;</span><span class="n">length</span><span class="p" data-group-id="5636637844-3">(</span><span class="n">test</span><span class="p" data-group-id="5636637844-3">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nc">MapSet</span><span class="o">.</span><span class="n">subset?</span><span class="p" data-group-id="5636637844-4">(</span><span class="nc">MapSet</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="5636637844-5">(</span><span class="n">test</span><span class="p" data-group-id="5636637844-5">)</span><span class="p">,</span><span class="nc">MapSet</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="5636637844-6">(</span><span class="p" data-group-id="5636637844-7">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="5636637844-7">]</span><span class="p" data-group-id="5636637844-6">)</span><span class="p" data-group-id="5636637844-4">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="n">test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">extractRandomN</span><span class="p" data-group-id="8684962289-1">(</span><span class="p" data-group-id="8684962289-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="8684962289-2">]</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="8684962289-1">)</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="n">length</span><span class="p" data-group-id="8684962289-3">(</span><span class="n">test</span><span class="p" data-group-id="8684962289-3">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nc">MapSet</span><span class="o">.</span><span class="n">subset?</span><span class="p" data-group-id="8684962289-4">(</span><span class="nc">MapSet</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="8684962289-5">(</span><span class="n">test</span><span class="p" data-group-id="8684962289-5">)</span><span class="p">,</span><span class="nc">MapSet</span><span class="o">.</span><span class="n">new</span><span class="p" data-group-id="8684962289-6">(</span><span class="p" data-group-id="8684962289-7">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="8684962289-7">]</span><span class="p" data-group-id="8684962289-6">)</span><span class="p" data-group-id="8684962289-4">)</span><span class="w">
   </span><span class="no">true</span></code></pre>
   </section>
 </section>
@@ -596,8 +614,8 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">factorize</span><span class="p" data-group-id="7889748918-1">(</span><span class="mi">42</span><span class="p" data-group-id="7889748918-1">)</span><span class="w">
-  </span><span class="p" data-group-id="7889748918-2">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p" data-group-id="7889748918-2">]</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">factorize</span><span class="p" data-group-id="0931897877-1">(</span><span class="mi">42</span><span class="p" data-group-id="0931897877-1">)</span><span class="w">
+  </span><span class="p" data-group-id="0931897877-2">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p" data-group-id="0931897877-2">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="factorize/2">
@@ -671,8 +689,8 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">firstFibonacciElements</span><span class="p" data-group-id="6025224527-1">(</span><span class="mi">7</span><span class="p" data-group-id="6025224527-1">)</span><span class="w">
-  </span><span class="p" data-group-id="6025224527-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">13</span><span class="p" data-group-id="6025224527-2">]</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">firstFibonacciElements</span><span class="p" data-group-id="0488252218-1">(</span><span class="mi">7</span><span class="p" data-group-id="0488252218-1">)</span><span class="w">
+  </span><span class="p" data-group-id="0488252218-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">13</span><span class="p" data-group-id="0488252218-2">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="getCase/1">
@@ -736,8 +754,8 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">groupAnagrams</span><span class="p" data-group-id="7745907546-1">(</span><span class="p" data-group-id="7745907546-2">[</span><span class="s">&quot;eat&quot;</span><span class="p">,</span><span class="s">&quot;tea&quot;</span><span class="p">,</span><span class="s">&quot;tan&quot;</span><span class="p">,</span><span class="s">&quot;ate&quot;</span><span class="p">,</span><span class="s">&quot;nat&quot;</span><span class="p">,</span><span class="s">&quot;bat&quot;</span><span class="p" data-group-id="7745907546-2">]</span><span class="p" data-group-id="7745907546-1">)</span><span class="w">
-  </span><span class="p" data-group-id="7745907546-3">%{</span><span class="s">&quot;abt&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="7745907546-4">[</span><span class="s">&quot;bat&quot;</span><span class="p" data-group-id="7745907546-4">]</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;aet&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="7745907546-5">[</span><span class="s">&quot;eat&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tea&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ate&quot;</span><span class="p" data-group-id="7745907546-5">]</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ant&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="7745907546-6">[</span><span class="s">&quot;tan&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nat&quot;</span><span class="p" data-group-id="7745907546-6">]</span><span class="p" data-group-id="7745907546-3">}</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">groupAnagrams</span><span class="p" data-group-id="9763143456-1">(</span><span class="p" data-group-id="9763143456-2">[</span><span class="s">&quot;eat&quot;</span><span class="p">,</span><span class="s">&quot;tea&quot;</span><span class="p">,</span><span class="s">&quot;tan&quot;</span><span class="p">,</span><span class="s">&quot;ate&quot;</span><span class="p">,</span><span class="s">&quot;nat&quot;</span><span class="p">,</span><span class="s">&quot;bat&quot;</span><span class="p" data-group-id="9763143456-2">]</span><span class="p" data-group-id="9763143456-1">)</span><span class="w">
+  </span><span class="p" data-group-id="9763143456-3">%{</span><span class="s">&quot;abt&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="9763143456-4">[</span><span class="s">&quot;bat&quot;</span><span class="p" data-group-id="9763143456-4">]</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;aet&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="9763143456-5">[</span><span class="s">&quot;eat&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tea&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ate&quot;</span><span class="p" data-group-id="9763143456-5">]</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;ant&quot;</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p" data-group-id="9763143456-6">[</span><span class="s">&quot;tan&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;nat&quot;</span><span class="p" data-group-id="9763143456-6">]</span><span class="p" data-group-id="9763143456-3">}</span></code></pre>
   </section>
 </section>
 <section class="detail" id="letterCombination/1">
@@ -760,8 +778,8 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">letterCombination</span><span class="p" data-group-id="0242698699-1">(</span><span class="s">&quot;23&quot;</span><span class="p" data-group-id="0242698699-1">)</span><span class="w">
-</span><span class="p" data-group-id="0242698699-2">[</span><span class="s">&quot;ad&quot;</span><span class="p">,</span><span class="s">&quot;ae&quot;</span><span class="p">,</span><span class="s">&quot;af&quot;</span><span class="p">,</span><span class="s">&quot;bd&quot;</span><span class="p">,</span><span class="s">&quot;be&quot;</span><span class="p">,</span><span class="s">&quot;bf&quot;</span><span class="p">,</span><span class="s">&quot;cd&quot;</span><span class="p">,</span><span class="s">&quot;ce&quot;</span><span class="p">,</span><span class="s">&quot;cf&quot;</span><span class="p" data-group-id="0242698699-2">]</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">letterCombination</span><span class="p" data-group-id="4504832784-1">(</span><span class="s">&quot;23&quot;</span><span class="p" data-group-id="4504832784-1">)</span><span class="w">
+</span><span class="p" data-group-id="4504832784-2">[</span><span class="s">&quot;ad&quot;</span><span class="p">,</span><span class="s">&quot;ae&quot;</span><span class="p">,</span><span class="s">&quot;af&quot;</span><span class="p">,</span><span class="s">&quot;bd&quot;</span><span class="p">,</span><span class="s">&quot;be&quot;</span><span class="p">,</span><span class="s">&quot;bf&quot;</span><span class="p">,</span><span class="s">&quot;cd&quot;</span><span class="p">,</span><span class="s">&quot;ce&quot;</span><span class="p">,</span><span class="s">&quot;cf&quot;</span><span class="p" data-group-id="4504832784-2">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="lineWords/1">
@@ -784,8 +802,8 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">lineWords</span><span class="p" data-group-id="5637337105-1">(</span><span class="p" data-group-id="5637337105-2">[</span><span class="s">&quot;hello&quot;</span><span class="p">,</span><span class="s">&quot;alaska&quot;</span><span class="p">,</span><span class="s">&quot;dad&quot;</span><span class="p">,</span><span class="s">&quot;peace&quot;</span><span class="p" data-group-id="5637337105-2">]</span><span class="p" data-group-id="5637337105-1">)</span><span class="w">
-  </span><span class="p" data-group-id="5637337105-3">[</span><span class="s">&quot;alaska&quot;</span><span class="p">,</span><span class="s">&quot;dad&quot;</span><span class="p" data-group-id="5637337105-3">]</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">lineWords</span><span class="p" data-group-id="3747591654-1">(</span><span class="p" data-group-id="3747591654-2">[</span><span class="s">&quot;hello&quot;</span><span class="p">,</span><span class="s">&quot;alaska&quot;</span><span class="p">,</span><span class="s">&quot;dad&quot;</span><span class="p">,</span><span class="s">&quot;peace&quot;</span><span class="p" data-group-id="3747591654-2">]</span><span class="p" data-group-id="3747591654-1">)</span><span class="w">
+  </span><span class="p" data-group-id="3747591654-3">[</span><span class="s">&quot;alaska&quot;</span><span class="p">,</span><span class="s">&quot;dad&quot;</span><span class="p" data-group-id="3747591654-3">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="listRightAngleTriangles/0">
@@ -843,7 +861,7 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">prime?</span><span class="p" data-group-id="4507653781-1">(</span><span class="mi">3</span><span class="p" data-group-id="4507653781-1">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">prime?</span><span class="p" data-group-id="7671194955-1">(</span><span class="mi">3</span><span class="p" data-group-id="7671194955-1">)</span><span class="w">
   </span><span class="no">true</span></code></pre>
   </section>
 </section>
@@ -867,8 +885,8 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">removeConsecutiveDuplicates</span><span class="p" data-group-id="7413603112-1">(</span><span class="p" data-group-id="7413603112-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="7413603112-2">]</span><span class="p" data-group-id="7413603112-1">)</span><span class="w">
-  </span><span class="p" data-group-id="7413603112-3">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="7413603112-3">]</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">removeConsecutiveDuplicates</span><span class="p" data-group-id="0245825034-1">(</span><span class="p" data-group-id="0245825034-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="0245825034-2">]</span><span class="p" data-group-id="0245825034-1">)</span><span class="w">
+  </span><span class="p" data-group-id="0245825034-3">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="0245825034-3">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="reverse/1">
@@ -891,8 +909,8 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">reverse</span><span class="p" data-group-id="9984148131-1">(</span><span class="p" data-group-id="9984148131-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="9984148131-2">]</span><span class="p" data-group-id="9984148131-1">)</span><span class="w">
-  </span><span class="p" data-group-id="9984148131-3">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p" data-group-id="9984148131-3">]</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">reverse</span><span class="p" data-group-id="3445838918-1">(</span><span class="p" data-group-id="3445838918-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="3445838918-2">]</span><span class="p" data-group-id="3445838918-1">)</span><span class="w">
+  </span><span class="p" data-group-id="3445838918-3">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p" data-group-id="3445838918-3">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="rotateLeft/2">
@@ -915,12 +933,12 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">rotateLeft</span><span class="p" data-group-id="9496617759-1">(</span><span class="p" data-group-id="9496617759-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="9496617759-2">]</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="9496617759-1">)</span><span class="w">
-  </span><span class="p" data-group-id="9496617759-3">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="9496617759-3">]</span><span class="w">
-  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">rotateLeft</span><span class="p" data-group-id="9496617759-4">(</span><span class="p" data-group-id="9496617759-5">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="9496617759-5">]</span><span class="p">,</span><span class="mi">5</span><span class="p" data-group-id="9496617759-4">)</span><span class="w">
-  </span><span class="p" data-group-id="9496617759-6">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="9496617759-6">]</span><span class="w">
-  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">rotateLeft</span><span class="p" data-group-id="9496617759-7">(</span><span class="p" data-group-id="9496617759-8">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="9496617759-8">]</span><span class="p">,</span><span class="mi">101</span><span class="p" data-group-id="9496617759-7">)</span><span class="w">
-  </span><span class="p" data-group-id="9496617759-9">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p" data-group-id="9496617759-9">]</span></code></pre>
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">rotateLeft</span><span class="p" data-group-id="5610370696-1">(</span><span class="p" data-group-id="5610370696-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="5610370696-2">]</span><span class="p">,</span><span class="mi">3</span><span class="p" data-group-id="5610370696-1">)</span><span class="w">
+  </span><span class="p" data-group-id="5610370696-3">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="5610370696-3">]</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">rotateLeft</span><span class="p" data-group-id="5610370696-4">(</span><span class="p" data-group-id="5610370696-5">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="5610370696-5">]</span><span class="p">,</span><span class="mi">5</span><span class="p" data-group-id="5610370696-4">)</span><span class="w">
+  </span><span class="p" data-group-id="5610370696-6">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="5610370696-6">]</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">rotateLeft</span><span class="p" data-group-id="5610370696-7">(</span><span class="p" data-group-id="5610370696-8">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p" data-group-id="5610370696-8">]</span><span class="p">,</span><span class="mi">101</span><span class="p" data-group-id="5610370696-7">)</span><span class="w">
+  </span><span class="p" data-group-id="5610370696-9">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p" data-group-id="5610370696-9">]</span></code></pre>
   </section>
 </section>
 <section class="detail" id="shift/3">
@@ -960,12 +978,55 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">smallestNumber</span><span class="p" data-group-id="8610988227-1">(</span><span class="p" data-group-id="8610988227-2">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p" data-group-id="8610988227-2">]</span><span class="p" data-group-id="8610988227-1">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">smallestNumber</span><span class="p" data-group-id="1632602770-1">(</span><span class="p" data-group-id="1632602770-2">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p" data-group-id="1632602770-2">]</span><span class="p" data-group-id="1632602770-1">)</span><span class="w">
   </span><span class="mi">123</span><span class="w">
-  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">smallestNumber</span><span class="p" data-group-id="8610988227-3">(</span><span class="p" data-group-id="8610988227-4">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p" data-group-id="8610988227-4">]</span><span class="p" data-group-id="8610988227-3">)</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">smallestNumber</span><span class="p" data-group-id="1632602770-3">(</span><span class="p" data-group-id="1632602770-4">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">1</span><span class="p" data-group-id="1632602770-4">]</span><span class="p" data-group-id="1632602770-3">)</span><span class="w">
   </span><span class="mi">105</span><span class="w">
-  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">smallestNumber</span><span class="p" data-group-id="8610988227-5">(</span><span class="p" data-group-id="8610988227-6">[</span><span class="p" data-group-id="8610988227-6">]</span><span class="p" data-group-id="8610988227-5">)</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">smallestNumber</span><span class="p" data-group-id="1632602770-5">(</span><span class="p" data-group-id="1632602770-6">[</span><span class="p" data-group-id="1632602770-6">]</span><span class="p" data-group-id="1632602770-5">)</span><span class="w">
   </span><span class="s">&quot;Can&#39;t be empty&quot;</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="to_roman/1">
+
+  <div class="detail-header">
+    <a href="#to_roman/1" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">to_roman(n)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+<p>  Given an integer between 1 and 3999 returns the roman numeral equivalent</p><h2 id="to_roman/1-examples" class="section-heading">
+  <a href="#to_roman/1-examples" class="hover-link"><i class="ri-link-m" aria-hidden="true"></i>
+  <p class="sr-only">examples</p>
+  </a>
+  Examples
+</h2>
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">to_roman</span><span class="p" data-group-id="3814479113-1">(</span><span class="mi">1</span><span class="p" data-group-id="3814479113-1">)</span><span class="w">
+  </span><span class="s">&quot;I&quot;</span><span class="w">
+  </span><span class="gp unselectable">iex&gt;</span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">to_roman</span><span class="p" data-group-id="3814479113-2">(</span><span class="mi">3999</span><span class="p" data-group-id="3814479113-2">)</span><span class="w">
+  </span><span class="s">&quot;MMMCMXCIX&quot;</span></code></pre>
+  </section>
+</section>
+<section class="detail" id="to_roman/2">
+
+  <div class="detail-header">
+    <a href="#to_roman/2" class="detail-link" title="Link to this function">
+      <i class="ri-link-m" aria-hidden="true"></i>
+      <span class="sr-only">Link to this function</span>
+    </a>
+    <h1 class="signature" translate="no">to_roman(n, acc)</h1>
+
+
+  </div>
+
+  <section class="docstring">
+
+
   </section>
 </section>
 <section class="detail" id="translator/2">
@@ -989,7 +1050,7 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">translator</span><span class="p" data-group-id="3032509414-1">(</span><span class="mi">1</span><span class="p">,</span><span class="s">&quot;mama is with papa&quot;</span><span class="p" data-group-id="3032509414-1">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">translator</span><span class="p" data-group-id="4645677040-1">(</span><span class="mi">1</span><span class="p">,</span><span class="s">&quot;mama is with papa&quot;</span><span class="p" data-group-id="4645677040-1">)</span><span class="w">
   </span><span class="s">&quot;mother is with father&quot;</span></code></pre>
   </section>
 </section>
@@ -1013,7 +1074,7 @@ Functions
   </a>
   Examples
 </h2>
-<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">uniqueSum</span><span class="p" data-group-id="0358196041-1">(</span><span class="p" data-group-id="0358196041-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p" data-group-id="0358196041-2">]</span><span class="p" data-group-id="0358196041-1">)</span><span class="w">
+<pre><code class="makeup elixir" translate="no"><span class="w">  </span><span class="gp unselectable">iex&gt; </span><span class="nc">Ptrlabs</span><span class="o">.</span><span class="n">uniqueSum</span><span class="p" data-group-id="2947632250-1">(</span><span class="p" data-group-id="2947632250-2">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p" data-group-id="2947632250-2">]</span><span class="p" data-group-id="2947632250-1">)</span><span class="w">
   </span><span class="mi">15</span></code></pre>
   </section>
 </section>

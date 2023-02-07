@@ -273,7 +273,7 @@ end
  def factorize(number) when number <= 1 ,do: []
  def factorize(number) do
   # factorize(Enum.filter(factors(number),fn x -> prime?(x) == true end),number)
-  factorize(Enum.filter(factors(number),&(prime?(&1)) == true),number)
+  factorize(Enum.filter(factors(number),&prime?(&1) == true),number)
  end
  def factorize([head | tail],number) do
   factorsProduct = Enum.product([head | tail])
@@ -313,4 +313,30 @@ end
    true -> Enum.join(Enum.slice(List.first(words),0,count-1))
   end
  end
+ def to_roman(0, acc), do: acc
+  def to_roman(n, acc) do
+    roman_numerals = [
+      {1000, "M"}, {900, "CM"}, {500, "D"}, {400, "CD"},
+      {100, "C"}, {90, "XC"}, {50, "L"}, {40, "XL"},
+      {10, "X"}, {9, "IX"}, {5, "V"}, {4, "IV"},
+      {1, "I"}
+    ]
+
+    case roman_numerals |> Enum.find(fn({decimal, _}) -> n >= decimal end) do
+      nil -> acc
+      {decimal, roman} ->
+        to_roman(n - decimal, acc <> roman)
+    end
+  end
+@doc """
+  Given an integer between 1 and 3999 returns the roman numeral equivalent
+## Examples
+      iex>Ptrlabs.to_roman(1)
+      "I"
+      iex>Ptrlabs.to_roman(3999)
+      "MMMCMXCIX"
+"""
+  def to_roman(n) when n >= 1 and n <= 3999 do
+    to_roman(n, "")
+  end
 end
