@@ -4,7 +4,7 @@ defmodule Ptrlabs do
     "mama" => "mother",
     "papa" => "father"
   }
-  @dict %{"2" => ["a","b","c"], "3" => ["d","e","f"], "4" => ["g","h","i"], "5" => ["j","k","l"], "6" => ["m","n","o"], "7" => ["p","q","r"], "8" => ["s","t","u"],"9" => "vwx"}
+  @dict %{"2" => ["a","b","c"], "3" => ["d","e","f"], "4" => ["g","h","i"], "5" => ["j","k","l"], "6" => ["m","n","o"], "7" => ["p","q","r"], "8" => ["s","t","u"],"9" => ["v","w","x"]}
 
    @moduledoc """
     Provides methods for passing the PTR course.
@@ -272,7 +272,8 @@ end
 """
  def factorize(number) when number <= 1 ,do: []
  def factorize(number) do
-  factorize(Enum.filter(factors(number),fn x -> prime?(x) == true end),number)
+  # factorize(Enum.filter(factors(number),fn x -> prime?(x) == true end),number)
+  factorize(Enum.filter(factors(number),&(prime?(&1)) == true),number)
  end
  def factorize([head | tail],number) do
   factorsProduct = Enum.product([head | tail])
@@ -297,6 +298,15 @@ end
   |> magic(1)
 
  end
+@doc """
+ Given an array of strings, returns a map with the grouped anagrams
+## Examples
+      iex>Ptrlabs.groupAnagrams(["eat","tea","tan","ate","nat","bat"])
+      %{"abt" => ["bat"], "aet" => ["eat", "tea", "ate"], "ant" => ["tan", "nat"]}
+"""
+ def groupAnagrams(strings) do
+  Enum.group_by(strings, &(String.codepoints(&1) |> Enum.sort |> Enum.join))
+end
  def magic(words,count) when count <= length(words) do
   cond do
    Enum.all?(words, fn x -> Enum.slice(List.first(words),0,count) == Enum.slice(x,0,count) end) === true -> magic(words,count+1)
