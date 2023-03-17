@@ -1,6 +1,8 @@
 defmodule ProcessingLine do
   def start do
-    spawn(__MODULE__,:loop_system,[])
+    pid = spawn(__MODULE__,:loop_system,[])
+    send(pid,{:launch,"Monster Energy"})
+    pid
   end
   def loop() do
     receive do
