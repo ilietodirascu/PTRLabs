@@ -1,4 +1,4 @@
-defmodule Root do
+defmodule App do
   def start do
 
     Dispatcher.start_link()
